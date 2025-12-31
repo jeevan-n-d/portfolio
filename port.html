@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeevan N D | Software Engineer Portfolio</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --primary: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #22c55e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15, 23, 42, 0.95);
+      border-bottom: 1px solid #1f2933;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 1.3rem;
+      color: var(--primary);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    nav ul li a {
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+
+    nav ul li a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 1.2rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 5rem;
+    }
+
+    .hero h2 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 700px;
+      margin: 1rem auto 2rem;
+    }
+
+    .hero .links a {
+      margin: 0 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border: 1px solid var(--primary);
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    .hero .links a:hover {
+      background: var(--primary);
+      color: #000;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #1f2933;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    ul.skills {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    ul.skills li {
+      background: #020617;
+      border: 1px solid #1f2933;
+      padding: 0.4rem 0.7rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #020617;
+      border-top: 1px solid #1f2933;
+    }
+
+    footer p {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h1>JEEVAN N D</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Aspiring Software Engineer</h2>
+  <p>
+    Aspiring Computer Science Engineer with hands-on experience in Python, AI/ML,
+    and cloud technologies through self-driven projects and certifications.
+    Passionate about building scalable systems and intelligent solutions.
+  </p>
+  <div class="links">
+    <a href="#" target="_blank">LinkedIn</a>
+    <a href="#" target="_blank">GitHub</a>
+    <a href="#">Portfolio</a>
+  </div>
+</section>
+
+<section id="about">
+  <h3>Career Objective</h3>
+  <div class="card">
+    Aspiring Computer Science Engineer with hands-on experience in Python, AI/ML,
+    and cloud technologies through self-driven projects and online certifications.
+    Fast learner with a growth mindset, passionate about AI tools and emerging technologies.
+    Known for being punctual, honest, and eager to contribute and grow in a tech environment.
+  </div>
+</section>
+
+<section id="education">
+  <h3>Education</h3>
+
+  <div class="card">
+    <strong>B.Tech in Computer Science and Engineering</strong><br/>
+    Rajeev Institute of Technology, Hassan, Karnataka<br/>
+    <span class="muted">CGPA: 8.7 / 10 | 11/2022 – Present</span>
+  </div>
+
+  <div class="card">
+    <strong>Pre-University (PCMB)</strong><br/>
+    Masters PU College, Hassan, Karnataka<br/>
+    <span class="muted">Score: 96 / 100 | 07/2020 – 03/2022</span>
+  </div>
+
+  <div class="card">
+    <strong>Secondary Education</strong><br/>
+    Sri Aravinda School, Hassan, Karnataka<br/>
+    <span class="muted">Percentage: 92 / 100 | 05/2011 – 03/2020</span>
+  </div>
+</section>
+
+<section id="skills">
+  <h3>Skills</h3>
+
+  <div class="card">
+    <strong>Programming Languages</strong>
+    <ul class="skills">
+      <li>Python</li><li>C</li><li>Java</li><li>HTML</li><li>CSS</li><li>SQL</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>AWS</strong>
+    <ul class="skills">
+      <li>EC2</li><li>IAM</li><li>VPC</li><li>S3</li><li>EBS</li><li>EFS</li>
+      <li>SQS</li><li>RDS</li><li>Route 53</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>AI & ML</strong>
+    <ul class="skills">
+      <li>Pandas</li><li>NumPy</li><li>OpenCV</li><li>Matplotlib</li>
+      <li>Seaborn</li><li>TensorFlow</li><li>CNN</li>
+      <li>Scikit-learn</li><li>Keras</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>Tools & Technologies</strong>
+    <ul class="skills">
+      <li>TOSCA</li><li>Solid Edge</li><li>VS Code</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h3>Projects</h3>
+
+  <div class="grid">
+    <div class="card">
+      <strong>Real-Time Face Mask Detection</strong>
+      <p class="muted">
+        CNN-based deep learning system for real-time mask detection using OpenCV and TensorFlow.
+        Live video inference with accurate Mask / No-Mask classification.
+      </p>
+      <a href="#">GitHub</a> | <a href="#">Demo</a>
+    </div>
+
+    <div class="card">
+      <strong>Dog vs Cat Image Classification</strong>
+      <p class="muted">
+        Deep learning image classification model using CNN and Keras with strong accuracy.
+      </p>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="card">
+      <strong>Three-Tier Architecture on AWS</strong>
+      <p class="muted">
+        Designed and implemented a scalable three-tier architecture using EC2, RDS, ALB, and ACM
+        with high availability and secure SSL setup.
+      </p>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h3>Certifications</h3>
+  <div class="card">
+    Python – PrepInsta<br/>
+    Cloud Computing – PrepInsta<br/>
+    AWS – Udemy<br/>
+    AI & ML – PrepInsta
+  </div>
+</section>
+
+<section>
+  <h3>Additional Information</h3>
+  <div class="card">
+    <strong>Languages:</strong> English (Professional), Kannada (Native), Hindi (Limited)<br/><br/>
+    <strong>Interests:</strong> Open-source contribution, exploring AI tools, cricket, music, fitness
+  </div>
+</section>
+
+<footer id="contact">
+  <p>
+    📞 9483429197 | ✉️ jeevanrajeshgowda@gmail.com <br/>
+    © 2025 Jeevan N D. All rights reserved.
+  </p>
+</footer>
+
+<script>
+  // Reserved for future enhancements
+</script>
+
+</body>
+</html>
